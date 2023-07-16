@@ -1,0 +1,111 @@
+.footer {
+    background-color: $primary;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .copyright {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            color: white;
+
+            p {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+
+        li a {
+            display: block;
+            font-size: $fz-5;
+            color: white;
+            padding: 20px 18px;
+
+            &:hover{
+                color: $lightSecondary;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: $breakPoint) {
+    .footer__content{
+        padding: 20px 0px;
+    
+        .copyright{
+            justify-content: space-between;
+        }
+        .footer__menu{
+            display: none;
+        }
+    }
+}
+
+/*-----subscribe-----*/
+.subscribe {
+    display: flex;
+    height: 600px;
+    background: center center fixed no-repeat url("../../images/subscribe.jpg");
+    background-size: cover;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    h3 {
+        margin-bottom: 20px;
+        font-size: $fz-8;
+        font-weight: bold;
+        color: $secondary;
+    }
+
+    .email {
+        display: flex;
+        width: 100%;
+        max-width: 350px;
+        border: 2px solid $primary;
+        border-radius: 4px;
+
+        input {
+            padding: 20px 10px;
+            font-size: 16px;
+            color: $secondary;
+            border: none;
+
+            &:focus-visible {
+                outline: none;
+            }
+        }
+
+        button {
+            flex-grow: 1;
+            background-color: $primary;
+            color: white;
+            border: none;
+            font-size: 16px;
+
+            &:hover {
+                background-color: #6c4700;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakPoint) {
+
+    .subscribe-content{
+        align-items: center;
+    }
+
+}

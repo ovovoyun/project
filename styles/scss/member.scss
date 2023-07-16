@@ -1,0 +1,200 @@
+@import "main.scss";
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar{
+    flex-grow: 1;
+    display: inline-block;
+
+    h2{
+        margin-bottom: 28px;
+        font-size: $fz-5;
+    }
+
+    &__list li {
+        margin-bottom: 24px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        a{
+            color: $secondary;
+        }
+    }
+
+    &__list-active{
+        border-bottom: 2px solid $primary;
+    }
+}
+
+.member{
+    flex-grow: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.memberEdit{
+    flex-grow: 1; 
+    max-width: 600px;
+
+    form{
+        margin-bottom: 56px;
+        min-width: 350px;
+
+        h3{
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid black;
+        }
+    }
+    
+
+    .memberInfo__edit,.memberPwd__edit{
+        display: flex;
+        flex-direction: column;
+
+        li{
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+            color: $secondary;
+
+            
+
+            label{
+                min-width: 64px;
+                margin-right: 31px;
+            }
+
+            input,select{
+                padding: 10px;
+                border: 1px solid $lightSecondary;
+                border-radius: 4px;
+                font-size: 16px;
+                color: $secondary;
+            }
+
+            input[type="text"],input[type="email"],input[type="password"]{
+                flex-grow: 1;
+                max-width: 450px;
+            }
+
+            input[type="checkbox"]{
+                accent-color: $primary;
+            }
+
+            .address{
+                display: flex;
+                flex-wrap: wrap;
+
+                select{
+                    margin-right: 10px;
+                    margin-bottom: 8px;
+                }
+                .news{
+                    min-width: 100%;
+                }
+            }
+        }
+
+        li:nth-child(6),:nth-child(7){
+            align-items: flex-start;
+        }
+    }
+
+    .memberEdit-btn{
+        padding: 8px 48px;
+        background-color: $primary;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        margin-left: 95px;
+    }
+}
+
+.memberData{
+    h4{
+        display: flex;
+        align-items: center;
+        margin-bottom: 28px;
+        color: $secondary;
+    }
+
+    .memberData__list{
+        display: flex;
+        flex-direction: column;
+
+        li{
+            display: flex;
+            margin-bottom: 16px;
+            color: $secondary;
+
+            &:last-child,&:nth-last-child(2){
+                margin-bottom: 0;
+            }
+
+            h5{
+                min-width: 64px;
+                margin-right: 31px;
+            }
+        }
+        
+
+        .lightText{
+            font-size: 14px;
+            color: #A5A5A5;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .subHeader{
+        margin-bottom: 0;
+    }
+
+    .main{
+        max-width: 375px;
+        flex-wrap: wrap;
+
+        .sidebar{
+            margin: 40px 0px;
+
+            h2{
+                display: none;
+            }
+
+            .sidebar__list{
+                display: flex;
+                justify-content: space-between;
+
+                li{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+
+        .member{
+            flex-direction: column-reverse;
+        }
+
+        .memberEdit{
+            form{
+                margin-bottom: 48px;
+            }
+            .memberInfo__edit,.memberPwd__edit{
+                input[type="text"],input[type="email"],input[type="password"]{
+                    flex-grow: 1;
+                    max-width: 255px;
+                }
+            }
+        }
+
+        .memberData__list{
+            margin-bottom: 40px;
+        }
+    }
+}

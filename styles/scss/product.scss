@@ -1,0 +1,84 @@
+@import "main.scss";
+
+/*-----main-----*/
+.product__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 78px;
+    gap: 56px 15px;
+}
+
+.product__block{
+    &__link{
+        display: block;
+    }
+
+    &__img{
+        width: 255px;
+        height: 255px;
+    }
+
+    h3{
+        font-size: $fz-6;
+        font-weight: bold;
+    }
+
+    p{
+        font-weight: lighter;
+    }
+
+    .price{
+        margin-left: 8px;
+        color: $secondary;
+        text-decoration: line-through;
+    }
+
+    &__icon a{
+        display: inline-block;
+        color: $primary;
+    }
+}
+
+.pageList{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    li:not(:last-child){
+        margin-right: 20px;
+    }
+
+    &-active{
+        border-bottom: 1px solid $primary;
+
+        a{
+            color: $primary;
+        }
+    }
+}
+
+@media screen and (max-width: $breakPoint) {
+    .product__list{
+        margin-top: 42px;
+        margin-bottom: 46px;
+        gap: 30px 15px;
+    }
+
+    .product__block{
+        &__img{
+            width: 165px;
+            height: 165px;
+        }
+
+        h3{
+            font-size: $fz-5;
+            font-weight: bold;
+        }
+    }
+    .pageList{
+        margin-bottom: 40px;
+    }
+}
+

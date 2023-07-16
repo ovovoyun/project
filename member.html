@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/css/member.css">
+    
+    <title>D'PERFUME</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1><a href="./index.html" class="logo">D'Perfume</a></h1>
+        <nav>
+            <input type="checkbox" id="menu-btn" class="menu-btn"/>
+            
+            <ul class="sm-menu header__menu">
+                <li><a href="#" class="sm-cart"><span class="material-icons">shopping_cart</span>
+                    <span class="menu-num">3</span></a>
+                </li>
+                <li>
+                    <label for="menu-btn" class="menu-icon"><span class="material-icons">menu</span></label>
+                </li>
+            </ul>
+            <ul class="change-menu header__menu lg-menu">
+                <li><a href="./product.html"><span class="material-icons">store</span>Product</a></li>
+                <li><a href="./member.html"><span class="material-icons">person</span>Log in</a></li>
+                <li><a href="#"><span class="material-icons">favorite</span>Wishlist</a></li>
+                <li><a href="#"><span class="material-icons">shopping_cart</span>Cart(3)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="subHeader">
+        <div class="container">
+            <ul class="subHeader__menu">
+                <li><a href="#">CHANEL</a></li>
+                <li><a href="#">Jo Malone</a></li>
+                <li><a href="#">Curology</a></li>
+                <li><a href="#">Dior</a></li>
+                <li><a href="#">Chloe</a></li>
+                <li><a href="#">ZARA</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="main container">
+        <!-- sidebar -->
+        <div class="sidebar">
+            <h2>會員中心</h2>
+            <ul class="sidebar__list">
+                <li><a href="#" class="sidebar__list-active">會員資料修改</a></li>
+                <li><a href="#">訂單查詢</a></li>
+                <li><a href="#">退/換貨申請</a></li>
+            </ul>
+        </div>
+
+        <div class="member">
+            <!-- memberEdit -->
+            <div class="memberEdit">
+                <form action="#">
+                    <h3>個人資料修改</h3>
+                    <ul class="memberInfo__edit">
+                        <li>
+                            <label for="account">會員帳號</label>
+                            <p>email@example.com</p>
+                        </li>
+                        <li>
+                            <label for="name">會員姓名</label>
+                            <input type="text" id="name" name="name" required>
+                        </li>
+                        <li>
+                            <label for="gender">會員性別</label>
+                            <select name="gender" id="gender">
+                                <option value="male">男</option>
+                                <option value="female">女</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="email">電子信箱</label>
+                            <input type="email" id="email" name="email" required>
+                        </li>
+                        <li>
+                            <label for="phone">手機號碼</label>
+                            <input type="text" id="phone" name="phone" pattern="09\d{2}\-?\d{3}\-?\d{3}" required>
+                        </li>
+                        <li>
+                            <label for="contactAddress">聯絡地址</label>
+                            <div class="address">
+                                <select name="contactCountry" id="contactCountry">
+                                    <option value="tw">台灣及離島</option>
+                                    <option value="us">美國</option>
+                                </select>
+                                <br/>
+                                <select name="contactCity" id="contactCity">
+                                    <option value="kaohsiung">高雄市</option>
+                                </select>
+                                <select name="contactTownship" id="contactTownship">
+                                    <option value="Yancheng">鹽埕區</option>
+                                </select>
+                                <label for="news" class="news">
+                                    <input type="checkbox" id="news" checked>
+                                    我願意收到最新優惠情報
+                                </label>
+                            </div>
+                            
+                        </li>
+                        <li>
+                            <label for="shippingAddress">配送地址</label>
+                            <div class="address">
+                                <select name="shippingCountry" id="shippingCountry">
+                                    <option value="tw">台灣及離島</option>
+                                    <option value="us">美國</option>
+                                </select>
+                                <select name="shippingCity" id="shippingCity">
+                                    <option value="kaohsiung">高雄市</option>
+                                </select>
+                                <select name="shippingTownship" id="shippingTownship">
+                                    <option value="Yancheng">鹽埕區</option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="submit" class="memberEdit-btn">確認送出</button>
+                </form>
+
+                <form action="#">
+                    <h3>修改密碼</h3>
+                    <ul class="memberPwd__edit">
+                        <li>
+                            <label for="password">舊密碼</label>
+                            <input type="password" id="password" name="password">
+                        </li>
+                        <li>
+                            <label for="newPassword">新密碼</label>
+                            <input type="password" id="newPassword" name="newPassword">
+                        </li>
+                        <li>
+                            <label for="checkPassword">確認密碼</label>
+                            <input type="password" id="checkPassword" name="checkPassword">
+                        </li>
+                    </ul>
+                    <button type="submit" class="memberEdit-btn">變更密碼</button>
+                </form>
+            </div>
+
+            <!-- memberData -->
+            <div class="memberData">
+                <h4><span class="material-icons">person</span>會員編碼 T00020080615</h4>
+                <ul class="memberData__list">
+                    <li>
+                        <h5>購物車</h5>
+                        <p>56</p>
+                    </li>
+                    <li>
+                        <h5>我的收藏</h5>
+                        <p>23</p>
+                    </li>
+                    <li>
+                        <h5>完成訂單</h5>
+                        <p>8</p>
+                    </li>
+                    <li>
+                        <h5>會員紅利</h5>
+                        <p>2680</p>
+                    </li>
+                    <li>
+                        <h5>邀請碼</h5>
+                        <p>TK2075</p>
+                    </li>
+                    <li class="lightText">新戶輸入邀請碼即可獲贈紅利點數1000點</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="copyright">
+                    <a href="./index.html"><img src="./images/d’Perfumew.png" alt="whiteLogo"></a>
+                    <p>© 2020. All Rights Reserved.</p>
+                </div>
+                <ul class="footer__menu">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
