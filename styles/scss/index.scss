@@ -17,14 +17,14 @@
     background-size: cover;
     margin-bottom: 60px;
 
-    .banner-content {
+    &__content {
         display: flex;
         justify-content: end;
         align-items: center;
         height: 100%;
     }
 
-    .banner-text {
+    &__text {
         max-width: 445px;
         color: white;
 
@@ -59,13 +59,21 @@
 
 /*-------productInfo + plan--------*/
 .productInfo {
-    .productInfo-block {
+    &__block {
         display: flex;
         align-items: center;
 
-        .productInfo-text {
+        .productInfo__textBlock{
             width: 50%;
-            padding: 0px 110px;
+            height: 555px;
+            padding: 0 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .productInfo__text {
+            max-width: 350px;
 
             h3 {
                 font-size: $fz-8;
@@ -79,7 +87,7 @@
             }
         }
 
-        .productInfo-img {
+        .productInfo__img {
             width: 50%;
             height: 555px;
             overflow: hidden;
@@ -95,13 +103,19 @@
     display: flex;
     margin-bottom: 60px;
 
-    .plan-img {
+    &__img {
         width: 50%;
     }
 
-    .plan-text {
+    &__textBlock{
         width: 50%;
-        padding: 92px 110px;
+        padding: 92px 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .plan__text {
+        max-width: 350px;
 
         ol{
             list-style-type: decimal;
@@ -123,7 +137,7 @@
             font-weight: lighter;
         }
 
-        .plan-btn {
+        .plan__btn {
             display: block;
             padding: 18px 52px;
             border: 2px solid black;
@@ -147,7 +161,7 @@
 
 .productList {
     display: flex;
-    justify-content: space-between;
+    gap: 0px 30px;
 
     img {
         flex-grow: 1;
@@ -160,17 +174,17 @@
         display: block;
     }
 
-    .productList-title {
+    .productList__title {
         font-size: $fz-6;
         font-weight: bold;
     }
 
-    .productList-text{
+    .productList__text{
         margin-bottom: 16px;
         font-weight: lighter;
     }
 
-    .productList-price {
+    .productList__price {
         font-weight: lighter;
 
         span {
@@ -179,8 +193,12 @@
             text-decoration: line-through;
         }
     }
+
+    .link-disabled{
+        pointer-events: none;
+    }
     
-    .soldOut-container{
+    .soldOut__container{
         position: relative;
         margin-bottom: 8px;
 
@@ -211,7 +229,7 @@
     align-items: center;
     margin-bottom: 60px;
 
-    .bottle-text {
+    .bottle__text {
         max-width: 350px;
         margin-left: 30px;
         font-weight: lighter;
@@ -221,7 +239,7 @@
             font-weight: bold;
         }
 
-        .bottle-subTitle {
+        .bottle__subTitle {
             font-size: $fz-5;
         }
 
@@ -232,18 +250,15 @@
 }
 
 @media screen and (max-width: $breakPoint) {
-    .container{
-        max-width: 375px;
-    }
 
     .banner{
         height: 480px;
 
-        .banner{
+        &__content{
             justify-content: center;
         }
     
-        .banner-text{
+        &__text{
             h2{
                 font-size: $fz-8;
             }
@@ -259,20 +274,25 @@
             flex-direction: row;
         }
 
-        .productInfo-block{
+        &__block{
             flex-wrap: wrap;
             margin-bottom: 32px;
 
-            .productInfo-text {
+            .productInfo__textBlock{
                 width: 100%;
+                height: auto;
                 padding: 0;
+            }
+
+            .productInfo__text {
+                max-width: 100%;
 
                 p{
                     margin-bottom: 8px;
                 }
             }
 
-            .productInfo-img {
+            .productInfo__img {
                 width: 100%;
                 height: 350px;
             }
@@ -282,15 +302,19 @@
     .plan{
         flex-wrap: wrap;
 
-        .plan-img {
+        &__img {
             width: 100%;
             height: 680px;
             margin-bottom: 8px;
         }
-    
-        .plan-text {
+
+        &__textBlock{
             width: 100%;
             padding: 0;
+        }
+    
+        .plan__text {
+            max-width: 100%;
 
             li{
                 margin-bottom: 20px;
@@ -302,6 +326,7 @@
         flex-wrap: wrap;
 
         img{
+            max-width: 100%;
             height: 350px;
         }
 
@@ -315,12 +340,17 @@
         flex-wrap: wrap;
         margin-bottom: 40px;
 
+        .bottle__text {
+            max-width: 100%;
+            margin-left: 0;
+        }
         img{
             height: 520px;
             margin-bottom: 8px;
         }
 
-        .bottle-text{
+        &__text{
+            max-width: 100%;
             margin-left: 0px;
         }
     }

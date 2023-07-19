@@ -85,8 +85,6 @@ body {
 }
 
 .header {
-  max-width: 1140px;
-  padding: 0 15px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -237,6 +235,7 @@ body {
     padding: 20px 0px;
   }
   .footer__content .copyright {
+    width: 100%;
     justify-content: space-between;
   }
   .footer__content .footer__menu {
@@ -253,7 +252,8 @@ body {
 .subscribe__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  margin-bottom: 112px;
   width: 100%;
 }
 .subscribe h3 {

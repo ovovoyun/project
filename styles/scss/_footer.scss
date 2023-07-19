@@ -41,6 +41,7 @@
         padding: 20px 0px;
     
         .copyright{
+            width: 100%;
             justify-content: space-between;
         }
         .footer__menu{
@@ -59,7 +60,8 @@
     &__content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
+        margin-bottom: 112px;
         width: 100%;
     }
 

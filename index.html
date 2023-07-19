@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header container">
         <h1><a href="./index.html" class="logo">D'Perfume</a></h1>
         <nav>
             <input type="checkbox" id="menu-btn" class="menu-btn"/>
@@ -37,8 +37,8 @@
 
     <main>
         <section class="banner">
-            <div class="container banner-content">
-                <div class="banner-text">
+            <div class="container banner__content">
+                <div class="banner__text">
                     <h2>Perfume your day</h2>
                     <p>
                         A perfume is like a piece of clothing, a message, a way of presenting oneself a costume that
@@ -51,69 +51,77 @@
 
         <section class="container">
             <ul class="productInfo">
-                <li class="productInfo-block row-reverse">
-                    <div class="productInfo-img">
+                <li class="productInfo__block row-reverse">
+                    <div class="productInfo__img">
                         <a href="#"><img src="./images/productInfo1.jpg" alt="Gabrielle CHANEL"></a>
                     </div>
-                    <div class="productInfo-text">
-                        <h3>Gabrielle CHANEL</h3>
-                        <p>全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。 極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</p>
-                        <a href="#" class="more-btn">查看更多</a>
+                    <div class="productInfo__textBlock">
+                        <div class="productInfo__text">
+                            <h3>Gabrielle CHANEL</h3>
+                            <p>全新嗅覺體驗，花香四溢、明亮馥郁。結合茉莉、依蘭依蘭、橙花和最迷人的格拉斯晚香玉之花香，呈現出夢幻花香氣息。 極具女性特質的香奈兒嘉柏麗香水，專為光芒四射的她而生。</p>
+                            <a href="#" class="more-btn">查看更多</a>
+                        </div>
                     </div>
                 </li>
 
-                <li class="productInfo-block">
-                    <div class="productInfo-img">
+                <li class="productInfo__block">
+                    <div class="productInfo__img">
                         <a href="#"><img src="./images/productInfo2.jpg" alt="Five O’clock Au Gingembre"></a>
                     </div>
-                    <div class="productInfo-text">
-                        <h3>Five O’clock Au Gingembre</h3>
-                        <p>生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。</p>
-                        <a href="#" class="more-btn">查看更多</a>
+                    <div class="productInfo__textBlock">
+                        <div class="productInfo__text">
+                            <h3>Five O’clock Au Gingembre</h3>
+                            <p>生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。</p>
+                            <a href="#" class="more-btn">查看更多</a>
+                        </div>
                     </div>
                 </li>
 
-                <li class="productInfo-block row-reverse">
-                    <div class="productInfo-img">
+                <li class="productInfo__block row-reverse">
+                    <div class="productInfo__img">
                         <a href="#"><img src="./images/productInfo3.jpg" alt="CHANEL N°5"></a>
                     </div>
-                    <div class="productInfo-text">
-                        <h3>CHANEL N°5</h3>
-                        <p>N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
-                        <a href="#" class="more-btn">查看更多</a>
+                    <div class="productInfo__textBlock">
+                        <div class="productInfo__text">
+                            <h3>CHANEL N°5</h3>
+                            <p>N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</p>
+                            <a href="#" class="more-btn">查看更多</a>
+                        </div>
                     </div>
                 </li>
             </ul>
 
             <!-- plan -->
             <div class="plan">
-                <div class="plan-img">
+                <div class="plan__img">
                     <a href="#"><img src="./images/plan.jpg" alt="plan"></a>
                 </div>
-                <div class="plan-text">
-                    <ol>
-                        <li>
-                            <br />
-                            <h4>Levels of Preventive Maintenance Compliance</h4>
-                            <p>The core idea of preventative maintenance is the performance of proactive actions against
-                                unscheduled downtime in order to identify potential defects before they evolve into
-                                something more severe.</p>
-                        </li>
-                        <li>
-                            <br />
-                            <h4>Percentage of Planned Maintenance</h4>
-                            <p>The planned maintenance percentage is the total planned maintenance time in your CMMS
-                                software over a date range over the total number of hours of a service performed by the
-                                technicians.</p>
-                        </li>
-                        <li>
-                            <br />
-                            <h4>Critical percentage of planned maintenance</h4>
-                            <p>Calculating the critical percentage of planned maintenance will help you prioritize the
-                                most important operations that should be performed immediately.</p>
-                        </li>
-                    </ol>
-                    <a href="#" class="plan-btn">Plan a free online training</a>
+                <div class="plan__textBlock">
+                    <div class="plan__text">
+                        <ol>
+                            <li>
+                                <br />
+                                <h4>Levels of Preventive Maintenance Compliance</h4>
+                                <p>The core idea of preventative maintenance is the performance of proactive actions against
+                                    unscheduled downtime in order to identify potential defects before they evolve into
+                                    something more severe.</p>
+                            </li>
+                            <li>
+                                <br />
+                                <h4>Percentage of Planned Maintenance</h4>
+                                <p>The planned maintenance percentage is the total planned maintenance time in your CMMS
+                                    software over a date range over the total number of hours of a service performed by the
+                                    technicians.</p>
+                            </li>
+                            <li>
+                                <br />
+                                <h4>Critical percentage of planned maintenance</h4>
+                                <p>Calculating the critical percentage of planned maintenance will help you prioritize the
+                                    most important operations that should be performed immediately.</p>
+                            </li>
+                        </ol>
+                        <a href="#" class="plan__btn">Plan a free online training</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -124,28 +132,28 @@
                     <li>
                         <a href="#">
                             <img src="./images/productList1.jpg" alt="Body Wash">
-                            <h4 class="productList-title">Poppy & Barley</h4>
-                            <p class="productList-text">Jo Malone</p>
-                            <p class="productList-price">NT$1,380 <span>NT$1,580</span></p>
+                            <h4 class="productList__title">Poppy & Barley</h4>
+                            <p class="productList__text">Jo Malone</p>
+                            <p class="productList__price">NT$1,380 <span>NT$1,580</span></p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <img src="./images//productList2.jpg" alt="Poppy & Barley">
-                            <h4 class="productList-title">Body Wash</h4>
-                            <p class="productList-text">Curology</p>
-                            <p class="productList-price">NT$1,580</p>
+                            <h4 class="productList__title">Body Wash</h4>
+                            <p class="productList__text">Curology</p>
+                            <p class="productList__price">NT$1,580</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <div class="soldOut-container">
+                        <a href="#" class="link-disabled">
+                            <div class="soldOut__container">
                                 <img src="./images/productList3.jpg" alt="Apple Cider Vinegar Capsule">
                                 <span class="soldOut">Sold Out</span>
                             </div>
-                            <h4 class="productList-title">Apple Cider Vinegar Capsule</h4>
-                            <p class="productList-text">Tonik</p>
-                            <p class="productList-price">NT$1,580</p>
+                            <h4 class="productList__title">Apple Cider Vinegar Capsule</h4>
+                            <p class="productList__text">Tonik</p>
+                            <p class="productList__price">NT$1,580</p>
                         </a>
                     </li>
                 </ul>
@@ -155,9 +163,9 @@
         <section class="container">
             <div class="bottleBlock">
                 <a href="#"><img src="./images/bottle.jpg" alt="bottle-recycling"></a>
-                <div class="bottle-text">
+                <div class="bottle__text">
                     <h3>Bottle-Recycling</h3>
-                    <p class="bottle-subTitle">Recycle your used empty bottles and be rewarded!</p>
+                    <p class="bottle__subTitle">Recycle your used empty bottles and be rewarded!</p>
                     <p>
                         For the past 10 years, we have collected over 800,000 bottles through Empty Bottle Recycling
                         Campaign and planted more than 860 pine trees for a better environment.For the past 10 years, we

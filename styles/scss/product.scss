@@ -7,7 +7,7 @@
     justify-content: center;
     margin-top: 80px;
     margin-bottom: 78px;
-    gap: 56px 15px;
+    gap: 56px 30px;
 }
 
 .product__block{
@@ -30,7 +30,11 @@
     }
 
     .price{
-        margin-left: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .price-gray{
         color: $secondary;
         text-decoration: line-through;
     }
@@ -67,14 +71,21 @@
     }
 
     .product__block{
+        width: calc((100% - 15px) / 2);
+
         &__img{
-            width: 165px;
-            height: 165px;
+            width: 100%;
+            height: calc((100vw - 15px) / 2);
+            object-fit: cover;
         }
 
         h3{
             font-size: $fz-5;
             font-weight: bold;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+
         }
     }
     .pageList{
